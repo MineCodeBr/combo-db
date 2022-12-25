@@ -20,8 +20,12 @@ function main() {
     db.set(userId, { xp: 0, coins: 0, loves: [] })
 
     //Add value on userId
-    db.add(userId + ".xp", 1)
-    db.add(userId + ".coins", 10)
+    db.add(userId + ".xp", 2)
+    db.add(userId + ".coins", 15)
+    
+    //Remove value on userId
+    db.remove(userId + ".xp", 1)
+    db.remove(userId + ".coins", 5)
    
     //Push on array
     for (const love of loves) {
