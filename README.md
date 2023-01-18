@@ -14,7 +14,8 @@ const userId = 12345678910
 const loves = ["cat", "dog"]
 
 function main() {
-    const db = new Database("users", { name: "TestUser" })
+    const db = new Database("users", { name: "TestUser", extension: "database" })
+    //Generator file .database (Custom)
 
     //Set User
     db.set(userId, { xp: 0, coins: 0, loves: [] })
