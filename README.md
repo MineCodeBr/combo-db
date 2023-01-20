@@ -1,5 +1,5 @@
-# Combo DB
-A simple database, used json
+## Combo DB
+A simple database, used json 
 
 ## Install
 ```bash
@@ -41,5 +41,52 @@ function main() {
 console.log(main())
 //Result: { xp: 1, coins: 10, loves: [ 'cat', 'dog' ] }
 ```
+[Examples](https://github.com/MineCodeBr/combo-db/examples)
 
-## :D
+
+
+## Docs
+```js
+const options = {
+    log: true, // return errors on terminal
+    name: "Database", // set name of database
+    extension: "json" //generator file custom
+}
+
+new Database("name", options)
+```
+
+# add
+```js
+  db.add("path", number)
+```
+
+# remove
+```js
+ db.remove("path", number)
+```
+
+# delete
+```js
+ db.delete("path")
+```
+
+# get
+```js
+ db.get("path")
+```
+
+# push
+```js
+ db.push("path", { object: true })
+ db.push("path", { string: true })
+```
+
+# set
+```js 
+ const value = {
+    string: "abc",
+    number: 10
+ }
+ db.set("path", value)
+```
