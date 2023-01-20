@@ -1,6 +1,6 @@
 {
   "name": "combo-db",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple database, used json",
   "main": "index.js",
   "directories": {
